@@ -125,7 +125,7 @@ namespace mandelbrot {
 		const double k) {
 
 	    double b = distance_estimator(x0, y0, max_iteration);
-	    if (b < 1E-5) {
+	    if (b < 0) {
 	    	c[0] = 0;
 	    	c[1] = 0;
 	    	c[2] = 0;
